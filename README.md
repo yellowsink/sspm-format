@@ -51,7 +51,8 @@ And that's it. The entire SSPM format. Nothing more to it really.
 
 ## Example
 
-![example image (in PNG)](https://github.com/yellowsink/sspm-format/raw/master/example.png)
+<img id="ex-img" src="https://github.com/yellowsink/sspm-format/raw/master/example.png" alt="example image (in PNG)" width="50" height="50" />
+(sorry for ugly interpolation, nothing I can do about it in GFM)
 
 ```
 // header
