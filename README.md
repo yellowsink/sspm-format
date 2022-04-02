@@ -48,3 +48,20 @@ And that's it. The entire SSPM format. Nothing more to it really.
  1. Decoder detects and removes `sspz`.
  2. Decompress via Zstandard.
  3. Decode as usual, except not expecting `sspm` magic bytes.
+
+## Example
+
+![example image (in PNG)](https://github.com/yellowsink/sspm-format/raw/master/example.png)
+
+```
+// header
+73 73 70 6D
+00 00 00 00 00 00 00 05
+00 00 00 00 00 00 00 05
+// payload
+7F 6C B3 D3  7F 6C B3 D3  7F 6C B3 D3  7F 6C B3 D3  7F A5 DC F0
+7F 6C B3 D3  7F 6C B3 D3  7F 6C B3 D3  7F A5 DC F0  FF C2 F1 FF
+7F 6C B3 D3  7F 6C B3 D3  7F A5 DC F0  FF C2 F1 FF  FF C2 F1 FF
+7F 6C B3 D3  7F A5 DC F0  FF C2 F1 FF  FF C2 F1 FF  FF C2 F1 FF
+7F A5 DC F0  FF C2 F1 FF  FF C2 F1 FF  FF C2 F1 FF  FF C2 F1 FF
+```
